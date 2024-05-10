@@ -50,7 +50,7 @@
     gsap.to(this.$refs.loadBox, {
       delay: 2, // Wait for 2 seconds before starting the animation
       duration: .5,
-      translateY: "-80%",
+      translateY: "-100%",
       easing: "easeOutExpo",
 
     });
@@ -75,10 +75,10 @@
   }
   .load-box {
     position: fixed;
-  bottom: -50%;
+  bottom: -100%;
   left: 0;
   width: 100%;
-  height: 900px;
+  height: 100%;
   background-color: #171717;
 
   }
@@ -95,4 +95,5 @@ transform: translate(-50%, -50%);
   opacity: 0;
   max-width: 300px;
   }
+
   </style>
