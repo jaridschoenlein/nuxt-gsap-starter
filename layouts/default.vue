@@ -31,6 +31,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

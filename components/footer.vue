@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>Created by Jarid Schoenlein</p>
+        <p>Created by <a href="https://github.com/jaridschoenlein">Jarid Schoenlein</a></p>
     </footer>
 
 </template>
