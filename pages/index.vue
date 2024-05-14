@@ -1,4 +1,5 @@
 <template>
+  <section class="fade-in">
     <div class="title">
       <h1>GSAP + Lenis Starter</h1>
       <p style="text-align: center;">A simple boilerplate project that includes a pre-loader and <a href="https://lenis.darkroom.engineering">Lenis Scroll</a></p>
@@ -15,11 +16,34 @@
         <img src="assets/img/img5.jpg">
         <img src="assets/img/img6.jpg">
     </div>
-
+  </section>
 </template>
+
+<script>
+import { gsap } from 'gsap';
+
+export default {
+  mounted() {
+    const elementsToFadeIn = document.querySelectorAll('.fade-in');
+
+ 
+    gsap.to(elementsToFadeIn, {
+      delay: 3,
+      opacity: 1,
+      duration: .65, 
+      stagger: 0.5, 
+      ease: 'power2.out' 
+    });
+  }
+}
+</script>
   
 
   <style>
+
+  .fade-in {
+    opacity: 0;
+  }
   h1 {
     font-size: 170px;
     margin: .25em 0 0 0;
