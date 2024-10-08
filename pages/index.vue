@@ -19,23 +19,12 @@
   </section>
 </template>
 
-<script>
-import { gsap } from 'gsap';
+<script setup>
 
-export default {
-  mounted() {
-    const elementsToFadeIn = document.querySelectorAll('.fade-in');
+onMounted(() => {
+  fadeIn();
+});
 
- 
-    gsap.to(elementsToFadeIn, {
-      delay: 3,
-      opacity: 1,
-      duration: .65, 
-      stagger: 0.5, 
-      ease: 'power2.out' 
-    });
-  }
-}
 </script>
   
 
