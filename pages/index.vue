@@ -9,9 +9,9 @@
  
     
     <div class="img-grid">
-        <img src="assets/img/img1.jpg">
-        <img src="assets/img/img2.jpg">
-        <img src="assets/img/img3.jpg">
+        <img class="hw" src="assets/img/img1.jpg">
+        <img class="hw" src="assets/img/img2.jpg">
+        <img class="hw" src="assets/img/img3.jpg">
         <img src="assets/img/img4.jpg">
         <img src="assets/img/img5.jpg">
         <img src="assets/img/img6.jpg">
@@ -46,6 +46,11 @@ onMounted(() => {
   a:hover {
     text-decoration: none;
     color: #000;
+  }
+
+  .hw {
+    height: 960px;
+    width: 640px;
   }
 
   .title {
